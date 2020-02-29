@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPS</title>
+</head>
+<script>
+    let playScore = 0;
+    let compScore = 0;
+    
+    function compPlay (){
+        let choices = ['rock', 'paper', 'scissors'];
+        let rand = math.floor(math.random() * 3);
+        let select = choices[rand];
+        return select;}
+
+    function play(player, select){
+        if (player === select) {
+            alert ('It is a draw');
+            return 'It is a draw';}
+        else if (player === 'rock' && select ==='scissors'){
+            alert ('You win, Rock beats scissors');
+            return 'You win, Rock beats sccissors';}
+        else if (player === 'rock' && select === 'paper'){
+            alert ('You lose, Paper beats rock');
+            return 'You lose, Paper beats rock';}
+        else if (player === 'paper' && select === 'scissors'){
+            alert ('You lose, Scissors beats paper');
+            return 'You lose, Scissors beats paper';}
+        else if (player === 'paper' && select === 'rock'){
+            alert ('You win, Paper beats rock');
+            return 'You win, Paper beats rock';}
+        else if (player === 'scissors' && select === 'paper'){
+            alert ('You win, Scissors beats paper');
+            return 'You win, Scissors beats paper';}
+        else if (player === 'scissors' && select === 'rock'){
+            alert ('You lose, Rock beats scissors');
+            return 'You lose, Rock beats scissors';}
+        else {
+            return 'You need to pick'}
+    }
+    
+    
+
+</script>
